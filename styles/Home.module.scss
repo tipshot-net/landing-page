@@ -7,18 +7,23 @@
   padding: 180px 0;
 }
 
-
-.image{
+.image {
   margin-top: 60px;
 
-  img{
+  img {
     max-width: 80%;
   }
 }
 
-.whatIs{
+.whatIs {
   height: 100vh;
-  background: url('../assets/tipshot_basketball_bg.png') no-repeat center center/cover;
-  padding: 250px 20px;
+  background: url('../assets/tipshot_basketball_bg.png') no-repeat center
+    center/cover;
+  padding: 290px 20px;
   padding-bottom: 60px;
+}
+
+.howItWorks {
+  min-height: 120vh;
+  background: url('../assets/tipshot_golf_bg.png') no-repeat center center/cover;
 }

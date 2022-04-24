@@ -12,7 +12,7 @@ const TopBar = () => {
 
   useEffect(() => {
     const handleTransparency = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         setTransparent(true)
       } else {
         setTransparent(false)

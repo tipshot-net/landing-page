@@ -64,6 +64,10 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
+
+      <div className={styles.howItWorks}>
+        
+      </div>
     </div>
   )
 }
