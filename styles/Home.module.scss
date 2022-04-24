@@ -1,11 +1,22 @@
 @import 'mixins';
 
-.home {
-  position: relative;
-}
-
 .hero {
-  min-height: 120vh;
+  height: 120vh;
   background: url('../assets/tipshot__football_bg.png') no-repeat center
     center/cover;
+  padding: 180px 0;
+}
+
+
+.image{
+  margin-top: 50px;
+
+  img{
+    max-width: 80%;
+  }
+}
+
+.whatIs{
+  height: 100vh;
+  background: url('../assets/tipshot_basketball_bg.png') no-repeat center center/cover;
 }
