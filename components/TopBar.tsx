@@ -1,13 +1,33 @@
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FiMail } from 'react-icons/fi'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { BsMedium } from 'react-icons/bs'
 import Logo from '../assets/logo.png'
+import styles from '../styles/Topbar.module.scss'
 
 const TopBar = () => {
+  const [transparent, setTransparent] = useState(false)
+
+  useEffect(() => {
+    const handleTransparency = () => {
+      if (window.scrollY > 200) {
+        setTransparent(true)
+      } else {
+        setTransparent(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleTransparency)
+
+    return () => document.removeEventListener('scroll', handleTransparency)
+  })
+
+  const topbarClassName = transparent ? styles.transparentTopbar : styles.topbar
+
   return (
-    <div className="fixed w-full py-14">
+    <div className={topbarClassName}>
       <div className="mx-auto flex max-w-6xl items-center justify-between">
         <div className="mainLogo">
           <Link href="/">
@@ -30,12 +50,12 @@ const TopBar = () => {
           </Link>
           <Link href="/about">
             <a className="inline-block pl-5 text-xl hover:text-[#FF0066]">
-              <AiOutlineGithub/>
+              <AiOutlineGithub />
             </a>
           </Link>
           <Link href="/about">
             <a className="inline-block pl-5 text-sm hover:text-[#FF0066]">
-              <BsMedium/>
+              <BsMedium />
             </a>
           </Link>
         </div>

@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import Image from 'next/image'
 import Mockup from '../assets/tipshot_mockup.png'
+import PolygonLogo from '../assets/polygon.png'
 import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -20,7 +22,7 @@ const Home: NextPage = () => {
           <div className="mt-5 flex w-full max-w-xl">
             <input
               type="email"
-              name='emailAddress'
+              name="emailAddress"
               className="mr-2 inline-block w-3/4 rounded bg-white p-3 text-sm text-gray-800 outline-0"
               placeholder="Enter your email address"
             />
@@ -36,7 +38,32 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className={styles.whatIs}></div>
+      <div className={styles.whatIs}>
+        <div className="m-auto max-w-md text-center text-white">
+          <h4 className="mb-5 text-4xl font-semibold">
+            What is <span className="font-bold">TIPSHOT</span>
+          </h4>
+          <p className="mb-4">
+            A Decentralized Sports Betting Platform built on
+          </p>
+
+          <Link href="https://polygon.technology/">
+            <a target="_blank" rel="noreferrer noopener">
+              <Image src={PolygonLogo} alt="Polygon Blockchain" />
+            </a>
+          </Link>
+
+          <p className="mt-4">
+            We eliminate the house and risk aversion that exists within existing
+            sports betting products.
+          </p>
+          <p>
+            Our unique system and architecture will allow bettors of all shapes
+            and sizes to get the bets they want to get on, when they want, at
+            market-implied odds without friction
+          </p>
+        </div>
+      </div>
     </div>
   )
 }
