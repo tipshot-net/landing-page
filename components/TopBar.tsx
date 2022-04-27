@@ -28,7 +28,7 @@ const TopBar = () => {
 
   return (
     <div className={topbarClassName}>
-      <div className="mx-auto flex max-w-6xl items-center justify-between">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-2">
         <div className="mainLogo">
           <Link href="/">
             <a className="text-2xl font-semibold text-white">

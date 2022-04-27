@@ -24,6 +24,25 @@
 }
 
 .howItWorks {
-  min-height: 120vh;
   background: url('../assets/tipshot_golf_bg.png') no-repeat center center/cover;
+}
+
+.roadmap{
+  background: url('../assets/tipshot_handball_bg.png') no-repeat center center/cover;
+}
+
+.callToAction{
+  background: url('../assets/tipshot_call_bg.png') no-repeat center center/cover;
+}
+
+@media screen and (max-width: 770px) {
+  .hero{
+    height: 100vh;
+    padding: 150px 10px;
+  }
+
+  .whatIs{
+    height: auto;
+    padding: 120px 10px;
+  }
 }

@@ -1,6 +1,7 @@
 import {ReactNode} from 'react'
 import Head from 'next/head'
 import TopBar from '../components/TopBar'
+import Footer from '../components/Footer'
 
 const MainLayout: React.FC<{children: ReactNode}> = ({children}) => {
   return (
@@ -11,9 +12,8 @@ const MainLayout: React.FC<{children: ReactNode}> = ({children}) => {
       </Head>
 
       <TopBar/>
-
-      
       {children}
+      <Footer/>
     </div>
   )
 }
