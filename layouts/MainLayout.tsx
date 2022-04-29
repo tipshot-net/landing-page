@@ -1,4 +1,5 @@
-import {ReactNode} from 'react'
+import { ReactNode } from 'react'
+import { Toaster } from 'react-hot-toast'
 import Head from 'next/head'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'
@@ -13,7 +14,8 @@ const MainLayout: React.FC<{children: ReactNode}> = ({children}) => {
 
       <TopBar/>
       {children}
-      <Footer/>
+      <Footer />
+      <Toaster/>
     </div>
   )
 }
