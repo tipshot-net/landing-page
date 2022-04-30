@@ -46,15 +46,16 @@ const TopBar = () => {
           >
             What We're Building
           </a>
-
-          <a
-            href="mailto:team@tipshot.net"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block pl-5 text-xl hover:text-[#FF0066]"
-          >
-            <FiMail />
-          </a>
+          {window.innerWidth > 500 && (
+            <a
+              href="mailto:team@tipshot.net"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block pl-5 text-xl hover:text-[#FF0066]"
+            >
+              <FiMail />
+            </a>
+          )}
 
           <a
             className="inline-block pl-5 text-xl hover:text-[#FF0066]"
@@ -65,14 +66,16 @@ const TopBar = () => {
             <AiOutlineGithub />
           </a>
 
-          <a
-            href="https://medium.com/@tipshot"
-            rel="noreferrer"
-            target="_blank"
-            className="inline-block pl-5 text-sm hover:text-[#FF0066]"
-          >
-            <BsMedium />
-          </a>
+          {window.innerWidth > 500 && (
+            <a
+              href="https://medium.com/@tipshot"
+              rel="noreferrer"
+              target="_blank"
+              className="inline-block pl-5 text-sm hover:text-[#FF0066]"
+            >
+              <BsMedium />
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -49,7 +49,7 @@ const Home: NextPage = () => {
       </div>
 
       <div className={styles.howItWorks}>
-        <div className="m-auto max-w-6xl py-44 px-4">
+        <div className="m-auto max-w-6xl py-32 md:py-60 px-4">
           <h1 className="mb-10 text-center text-4xl font-semibold text-white">
             How It Works
           </h1>
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                 </ul>
               </div>
 
-              <div className="rounded-br-md rounded-bl-md bg-[#FF0066] px-14 py-20 text-white md:w-[70%] md:rounded-tr-md md:rounded-bl-none">
+              <div className="rounded-br-md rounded-bl-md bg-[#FF0066] px-14 py-14 md:py-20 text-white md:w-[70%] md:rounded-tr-md md:rounded-bl-none">
                 {active === 1 && (
                   <>
                     <h5 className="mb-6 text-2xl font-semibold">Tipsters</h5>
