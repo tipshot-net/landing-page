@@ -39,7 +39,7 @@ const TopBar = () => {
 
         <div className="flex text-white">
           <a
-            href="https://medium.com/@tipshot"
+            href="https://tipshot.medium.com/tipshot-what-we-are-building-a5c95d911692"
             rel="noreferrer"
             target="_blank"
             className="inline-block border-r pr-6 text-sm hover:text-[#FF0066]"
@@ -58,7 +58,7 @@ const TopBar = () => {
 
           <a
             className="inline-block pl-5 text-xl hover:text-[#FF0066]"
-            href="https://github.com/orgs/tipshot-net"
+            href="https://github.com/tipshot-net"
             rel="noreferrer"
             target="_blank"
           >

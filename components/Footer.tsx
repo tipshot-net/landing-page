@@ -17,7 +17,7 @@ const Footer = () => {
         </a>
         <a
           className="inline-block pl-5 text-xl hover:text-[#FF0066]"
-          href="https://github.com/orgs/tipshot-net"
+          href="https://github.com/tipshot-net"
           rel="noreferrer"
           target="_blank"
         >

@@ -8,7 +8,7 @@ const MainLayout: React.FC<{children: ReactNode}> = ({children}) => {
   return (
     <div>
       <Head>
-        <title>Where NFTs Meet Sports Prediction</title>
+        <title>Tipshot</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

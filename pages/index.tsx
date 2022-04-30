@@ -23,8 +23,7 @@ const Home: NextPage = () => {
             <p className="font-light text-gray-100">
               Deriving utility from NFT and blockchain technology, the Tipshot
               ecosystem facilitates a frictionless, permissionless,
-              decentralized peer to peer exchange of sport prediction tips—
-              tagline
+              decentralized peer to peer exchange of sport prediction tips.
             </p>
           </div>
           <MailList />
@@ -50,7 +49,7 @@ const Home: NextPage = () => {
       </div>
 
       <div className={styles.howItWorks}>
-        <div className="m-auto max-w-6xl py-24 px-4">
+        <div className="m-auto max-w-6xl py-44 px-4">
           <h1 className="mb-10 text-center text-4xl font-semibold text-white">
             How It Works
           </h1>
@@ -154,7 +153,7 @@ const Home: NextPage = () => {
               <h4 className="mb-16 text-4xl font-semibold">Launch Roadmap</h4>
             </div>
 
-            <div className="flex flex-col md:flex-row items-stretch md:space-x-14 ">
+            <div className="flex flex-col items-stretch md:flex-row md:space-x-14 ">
               <RoadmapItem
                 phase="1"
                 steps={[
@@ -202,8 +201,9 @@ const Home: NextPage = () => {
             Don't Miss our <span className="text-[#FF0066]">Updates</span>
           </h3>
           <p className="mt-2 font-light">
-            Join the communtiy of amazing people to do amazing stuffs and making
-            more money
+            Tipshot is a one-of-a-kind ecosystem designed to be the ultimate,
+            one-stop sport tips marketplace, connecting professional tipsters
+            and sport bettors.
           </p>
           <MailList />
         </div>
