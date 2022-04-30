@@ -1,22 +1,24 @@
 import React from 'react'
 
-const RoadmapItem = () => {
-
+const RoadmapItem: React.FC<{ phase: string; steps: string[] }> = ({
+  phase,
+  steps,
+}) => {
   return (
-    <div className="md:w-1/4 relative mb-5 md:mb-0">
-      <div className="rounded-tr-md rounded-br-md border-l-4 border-l-[#FF0066] bg-white p-6 shadow-md pb-14">
-        <h6 className="mb-0 text-lg font-semibold text-[#FF0066]">Phase 1</h6>
-        <p className="text-sm font-semibold text-black">Title goes here</p>
-        <p className='text-sm mt-2 font-light'>
-          Mainnet MVP launch available with Pre-Match Betting only across the
-          popular soccer leagues - Q2 2022
-        </p>
+    <div className="relative mb-5 md:mb-0 md:w-1/4">
+      <div className="rounded-tr-md rounded-br-md border-l-4 border-l-[#FF0066] bg-white p-6 pb-14 h-[250px] shadow-md">
+        {/* <h6 className="mb-0 text-lg font-semibold text-[#FF0066]">Phase 1</h6> */}
+        <ul>
+          {steps.map((step, index) => (
+            <li className='list-disc' key={index}>{step}</li>
+          ))}
+        </ul>
       </div>
-      <div className="py-10 border-l-4 border-white border-dashed hidden md:block"></div>
-      <div className='w-[50px] h-[50px] bg-[#FF0066] rounded-full p-1 relative left-[-20px] hidden md:block'>
-          <div className='w-full h-full rounded-full border-4 flex items-center justify-center'>
-              <p className="text-xl font-semibold text-white">1</p>
-          </div>
+      <div className="hidden border-l-4 border-dashed border-white py-10 md:block"></div>
+      <div className="relative left-[-20px] hidden h-[50px] w-[50px] rounded-full bg-[#FF0066] p-1 md:block">
+        <div className="flex h-full w-full items-center justify-center rounded-full border-4">
+          <p className="text-xl font-semibold text-white">{phase}</p>
+        </div>
       </div>
     </div>
   )

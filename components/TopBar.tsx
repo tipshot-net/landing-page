@@ -38,26 +38,41 @@ const TopBar = () => {
         </div>
 
         <div className="flex text-white">
-          <Link href="/about">
-            <a className="inline-block border-r pr-6 text-sm hover:text-[#FF0066]">
-              About Us
-            </a>
-          </Link>
-          <Link href="/about">
-            <a className="inline-block pl-5 text-xl hover:text-[#FF0066]">
-              <FiMail />
-            </a>
-          </Link>
-          <Link href="/about">
-            <a className="inline-block pl-5 text-xl hover:text-[#FF0066]">
-              <AiOutlineGithub />
-            </a>
-          </Link>
-          <Link href="/about">
-            <a className="inline-block pl-5 text-sm hover:text-[#FF0066]">
-              <BsMedium />
-            </a>
-          </Link>
+          <a
+            href="https://medium.com/@tipshot"
+            rel="noreferrer"
+            target="_blank"
+            className="inline-block border-r pr-6 text-sm hover:text-[#FF0066]"
+          >
+            What We're Building
+          </a>
+
+          <a
+            href="mailto:team@tipshot.net"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block pl-5 text-xl hover:text-[#FF0066]"
+          >
+            <FiMail />
+          </a>
+
+          <a
+            className="inline-block pl-5 text-xl hover:text-[#FF0066]"
+            href="https://github.com/orgs/tipshot-net"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiOutlineGithub />
+          </a>
+
+          <a
+            href="https://medium.com/@tipshot"
+            rel="noreferrer"
+            target="_blank"
+            className="inline-block pl-5 text-sm hover:text-[#FF0066]"
+          >
+            <BsMedium />
+          </a>
         </div>
       </div>
     </div>

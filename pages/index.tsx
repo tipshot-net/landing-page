@@ -21,8 +21,10 @@ const Home: NextPage = () => {
               Where NFTs Meet Sport Prediction
             </h4>
             <p className="font-light text-gray-100">
-              Join the communtiy of amazing people to do amazing stuffs and
-              making more money
+              Deriving utility from NFT and blockchain technology, the Tipshot
+              ecosystem facilitates a frictionless, permissionless,
+              decentralized peer to peer exchange of sport prediction tips—
+              tagline
             </p>
           </div>
           <MailList />
@@ -90,16 +92,55 @@ const Home: NextPage = () => {
                         active === 3 ? 'bg-[#FFE7E7] text-[#FF0066]' : ''
                       }`}
                     >
-                      Betters
+                      Bettors
                     </button>
                   </li>
                 </ul>
               </div>
 
               <div className="rounded-br-md rounded-bl-md bg-[#FF0066] px-14 py-20 text-white md:w-[70%] md:rounded-tr-md md:rounded-bl-none">
-                <h5 className="mb-6 text-2xl font-semibold">
-                  Some text goes here
-                </h5>
+                {active === 1 && (
+                  <>
+                    <h5 className="mb-6 text-2xl font-semibold">Tipsters</h5>
+                    <p>
+                      Tipshot provides improved monetization opportunities for
+                      professional sport analysts and tipsters, without the need
+                      of trusting a central authority, the tipster takes full
+                      control of the pricing and ownership of their own tips.The
+                      Tipshot Decentralized Marketplace offers tipsters the
+                      opportunity to sell their tips across the globe, without
+                      any restrictions stifling your business growth.
+                    </p>
+                  </>
+                )}
+                {active === 2 && (
+                  <>
+                    <h5 className="mb-6 text-2xl font-semibold">Miners</h5>
+                    <p>
+                      Much like a banker who is responsible for verifying a
+                      transaction before its processing, a validator verifies
+                      each incoming tip before it is published and also decides
+                      the outcome to the events. Validation requires staking of
+                      the miner NFT, Miners earn rewards for securing the
+                      network through transaction fees. Also, tipsters pay a
+                      percentage of their earnings to miners as commission.
+                    </p>
+                  </>
+                )}
+                {active === 3 && (
+                  <>
+                    <h5 className="mb-6 text-2xl font-semibold">Bettors</h5>
+                    <p>
+                      Tipshot allows users to interact and transact on a global,
+                      permission-less, and self-executing platform. Tipsters'
+                      reviews, reputations and history is made transparent so as
+                      to enable bettors to make profitable decisions. With our
+                      unique money back guarantee, you only pay for winning
+                      tips. The guarantee is simple: If you don't win, you don't
+                      pay.
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -113,11 +154,43 @@ const Home: NextPage = () => {
               <h4 className="mb-16 text-4xl font-semibold">Launch Roadmap</h4>
             </div>
 
-            <div className="flex flex-col md:flex-row md:space-x-14 ">
-              <RoadmapItem />
-              <RoadmapItem />
-              <RoadmapItem />
-              <RoadmapItem />
+            <div className="flex flex-col md:flex-row items-stretch md:space-x-14 ">
+              <RoadmapItem
+                phase="1"
+                steps={[
+                  'Idea Conceptualized',
+                  'Protocol Architecture and design',
+                  'Intro Website Launch',
+                  'Roadmap Launch ',
+                ]}
+              />
+              <RoadmapItem
+                phase="2"
+                steps={[
+                  'Development of platform & smart contracts ',
+                  'Successful Launch on Mainnet',
+                  'Publishing the Code on GitHub',
+                  'Tests & Audit',
+                ]}
+              />
+              <RoadmapItem
+                phase="3"
+                steps={[
+                  'Discord channel launch',
+                  'Closed beta testing',
+                  'Open beta testing',
+                  'NFT presale',
+                ]}
+              />
+              <RoadmapItem
+                phase="4"
+                steps={[
+                  'Product Launch',
+                  'Governance Token launch',
+                  'Vote on V2 features',
+                  'Commencement of design & implementation of V2',
+                ]}
+              />
             </div>
           </div>
         </div>
@@ -126,11 +199,11 @@ const Home: NextPage = () => {
       <div className={`${styles.callToAction} py-24 px-4`}>
         <div className="m-auto max-w-lg text-center">
           <h3 className="text-5xl font-bold">
-            Some big text <span className="text-[#FF0066]">goes here</span>
+            Don't Miss our <span className="text-[#FF0066]">Updates</span>
           </h3>
           <p className="mt-2 font-light">
-            Join the communtiy of amazing peeople to do amazing stuffs and
-            making more money
+            Join the communtiy of amazing people to do amazing stuffs and making
+            more money
           </p>
           <MailList />
         </div>
