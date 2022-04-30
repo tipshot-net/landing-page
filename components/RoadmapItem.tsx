@@ -7,7 +7,7 @@ const RoadmapItem: React.FC<{ phase: string; steps: string[] }> = ({
   return (
     <div className="relative mb-5 md:mb-0 md:w-1/4">
       <div className="relative h-[220px] md:h-[290px] rounded-tr-md rounded-br-md border-l-4 border-l-[#FF0066] bg-white p-6 pb-14 shadow-md">
-        <h6 className="mb-0 text-lg font-semibold text-[#FF0066]">
+        <h6 className="mb-0 text-lg font-semibold text-[#FF0066] ">
           Phase {phase}
         </h6>
         <ul>
