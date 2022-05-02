@@ -51,7 +51,7 @@ const Home: NextPage = () => {
       </div>
 
       <div className={styles.howItWorks}>
-        <div className="m-auto max-w-6xl py-32 px-4 md:py-60">
+        <div className="m-auto max-w-6xl py-24 px-4 md:py-60">
           <h1 className="mb-16 text-center text-4xl font-semibold text-white md:mb-10">
             How It Works
           </h1>
@@ -199,7 +199,7 @@ const Home: NextPage = () => {
 
       <div className={`${styles.callToAction} py-24 px-4`}>
         <div className="m-auto max-w-lg text-center">
-          <h3 className="text-5xl font-bold">
+          <h3 className="text-4xl md:text-5xl font-bold">
             Don't Miss our <span className="text-[#FF0066]">Updates</span>
           </h3>
           <p className="mt-2 font-light">
