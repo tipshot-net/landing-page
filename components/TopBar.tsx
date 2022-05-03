@@ -42,21 +42,21 @@ const TopBar = () => {
             href="https://tipshot.medium.com/tipshot-what-we-are-building-a5c95d911692"
             rel="noreferrer"
             target="_blank"
-            className="inline-block border-r pr-6 text-sm hover:text-[#FF0066]"
+            className="inline-block` font-semibold md:border-r md:pr-6 text-sm hover:text-[#FF0066]"
           >
             What We're Building
           </a>
-            <a
-              href="mailto:team@tipshot.net"
-              target="_blank"
-              rel="noreferrer"
-              className="hidden md:inline-block pl-5 text-xl hover:text-[#FF0066]"
-            >
-              <FiMail />
-            </a>
+          <a
+            href="mailto:team@tipshot.net"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden pl-5 text-xl hover:text-[#FF0066] md:inline-block"
+          >
+            <FiMail />
+          </a>
 
           <a
-            className="inline-block pl-5 text-xl hover:text-[#FF0066]"
+            className="hidden pl-5 text-xl hover:text-[#FF0066] md:inline-block"
             href="https://github.com/tipshot-net"
             rel="noreferrer"
             target="_blank"
@@ -64,16 +64,14 @@ const TopBar = () => {
             <AiOutlineGithub />
           </a>
 
-
-            <a
-              href="https://medium.com/@tipshot"
-              rel="noreferrer"
-              target="_blank"
-              className="hidden md:inline-block pl-5 text-sm hover:text-[#FF0066]"
-            >
-              <BsMedium />
-            </a>
-
+          <a
+            href="https://medium.com/@tipshot"
+            rel="noreferrer"
+            target="_blank"
+            className="hidden pl-5 text-sm hover:text-[#FF0066] md:inline-block"
+          >
+            <BsMedium />
+          </a>
         </div>
       </div>
     </div>
