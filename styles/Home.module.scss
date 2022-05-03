@@ -8,7 +8,7 @@
 }
 
 .image {
-  margin-top: 120px;
+  margin-top: 100px;
 
   img {
     max-width: 80%;
@@ -37,12 +37,12 @@
 
 @media screen and (max-width: 770px) {
   .hero{
-    min-height: 100vh;
-    padding: 150px 10px;
+    height: auto;
+    padding: 150px 10px 100px 10px;
   }
 
   .image{
-    margin-top: 80px;
+    // margin-top: 80px;
   }
 
   .whatIs{

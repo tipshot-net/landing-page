@@ -31,9 +31,11 @@ const Home: NextPage = () => {
           <div
             className={`${styles.image} flex max-w-6xl flex-col items-center md:flex-row`}
           >
-            <Image src={Mockup} alt="Tipshot app mockup" />
+            <div>
+              <Image src={Mockup} alt="Tipshot app mockup" />
+            </div>
 
-            <div className="my-10 max-w-sm text-center text-white md:my-0 md:ml-10">
+            <div className="mt-16 max-w-sm text-center text-white md:my-0 md:ml-10">
               <h4 className="mb-5 text-3xl font-semibold">
                 Tipshot is a decentralized sports betting tips platform built on
               </h4>
@@ -49,25 +51,25 @@ const Home: NextPage = () => {
       </div>
 
       <div className={styles.howItWorks}>
-        <div className="m-auto max-w-6xl py-32 md:py-60 px-4">
-          <h1 className="mb-10 text-center text-4xl font-semibold text-white">
+        <div className="m-auto max-w-6xl py-24 px-4 md:py-60">
+          <h1 className="mb-16 text-center text-4xl font-semibold text-white md:mb-10">
             How It Works
           </h1>
 
           <Image src={HowItWorksImg} alt="Flow chat on how tipshot works" />
 
-          <div className="mt-16 md:px-8">
+          <div className="mt-24 md:mt-16 md:px-8">
             <div className="flex w-full flex-col shadow md:flex-row">
               <div className="rounded-tl-md rounded-tr-md bg-white p-8 md:w-[30%] md:rounded-bl-md md:rounded-tr-none md:py-16">
                 <h5 className="mb-6 text-2xl font-semibold text-gray-800">
                   Benefits
                 </h5>
 
-                <ul>
+                <ul className="flex md:block">
                   <li>
                     <button
                       onClick={() => setActive(1)}
-                      className={`mb-2 inline-block w-full rounded-md py-3 px-4 text-left text-sm font-medium ${
+                      className={`md:mb-2 mr-4 inline-block w-full rounded-md py-3 px-4 text-left text-sm font-medium md:mr-0 ${
                         active === 1 ? 'bg-[#FFE7E7] text-[#FF0066]' : ''
                       }`}
                     >
@@ -77,7 +79,7 @@ const Home: NextPage = () => {
                   <li>
                     <button
                       onClick={() => setActive(2)}
-                      className={`mb-2 inline-block w-full rounded-md py-3 px-4 text-left text-sm font-medium ${
+                      className={`md;mb-2 mr-4 inline-block w-full rounded-md py-3 px-4 text-left text-sm font-medium md:mr-0 ${
                         active === 2 ? 'bg-[#FFE7E7] text-[#FF0066]' : ''
                       }`}
                     >
@@ -87,7 +89,7 @@ const Home: NextPage = () => {
                   <li>
                     <button
                       onClick={() => setActive(3)}
-                      className={`mb-2 inline-block w-full rounded-md py-3 px-4 text-left text-sm font-medium ${
+                      className={`md:mb-2 inline-block w-full rounded-md py-3 px-4 text-left text-sm font-medium ${
                         active === 3 ? 'bg-[#FFE7E7] text-[#FF0066]' : ''
                       }`}
                     >
@@ -97,7 +99,7 @@ const Home: NextPage = () => {
                 </ul>
               </div>
 
-              <div className="rounded-br-md rounded-bl-md bg-[#FF0066] px-14 py-14 md:py-20 text-white md:w-[70%] md:rounded-tr-md md:rounded-bl-none">
+              <div className="rounded-br-md rounded-bl-md bg-[#FF0066] px-14 py-12 text-white md:w-[70%] md:rounded-tr-md md:rounded-bl-none md:py-20">
                 {active === 1 && (
                   <>
                     <h5 className="mb-6 text-2xl font-semibold">Tipsters</h5>
@@ -197,7 +199,7 @@ const Home: NextPage = () => {
 
       <div className={`${styles.callToAction} py-24 px-4`}>
         <div className="m-auto max-w-lg text-center">
-          <h3 className="text-5xl font-bold">
+          <h3 className="text-4xl md:text-5xl font-bold">
             Don't Miss our <span className="text-[#FF0066]">Updates</span>
           </h3>
           <p className="mt-2 font-light">
